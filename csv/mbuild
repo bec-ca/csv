@@ -1,0 +1,19 @@
+cpp_library:
+  name: csv_file
+  sources: csv_file.cpp
+  headers: csv_file.hpp
+  libs:
+    /bee/error
+    /bee/file_reader
+    /bee/filesystem
+
+cpp_test:
+  name: csv_file_test
+  sources: csv_file_test.cpp
+  libs:
+    /bee/file_writer
+    /bee/format_vector
+    /bee/testing
+    csv_file
+  output: csv_file_test.out
+
